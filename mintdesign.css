@@ -104,6 +104,7 @@ a {
 .faq-body {
   padding-top: 3%;
   padding-bottom: 3%;
+  display: none;
 }
 
 .title-title {

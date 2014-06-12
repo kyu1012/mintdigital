@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- jQuery -->
-  <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-  <script>
-    $(document).ready(function(){ $( "#accordion" ).accordion(); })
-  </script>
 
   <!-- Bootstrap -->
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -35,29 +28,9 @@
     </div>
     <hr>
   </div>
-
 </head>
-<body>
-  <!-- accordion test -->
-    <div id="mainContent">
-        <h1>This is an According Example</h1>
-    </div>
-    <div id="accordion">
-        <h3><a href="#">Heading for first sentence</a></h3>
-        <div>
-        <p>This is the first sentence.</p>
-        </div>
-        <h3><a href="#">Heading for second sentence</a></h3>
-        <div>
-        <p>This is the second sentence.</p>
-        </div>
-        <h3><a href="#">Heading for third sentence</a></h3>
-        <div>
-        <p>This is the third sentence.</p>
-        </div>
-    </div>
-    <!-- end accordion test -->
 
+<body>
   <div class="row">
     <!-- Left Side -->
     <div class="col-md-8">
@@ -73,6 +46,7 @@
 
       <!-- FAQS Toggle Boxes -->
       <div id="faqs">
+
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">What does Mint Studio Do?</h3>
@@ -82,6 +56,7 @@
             We partner with companies to solve problems and help build a better future. We want to build meaningful work that lasts.
           </div>
         </div>
+
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">What does Mint Ventures Do?</h3>
@@ -91,6 +66,7 @@
             We invent, test, build and take our own products to market. We're commited to creating self-sustaining businesses.
           </div>
         </div>
+
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">What does Mint Community do?</h3>
@@ -144,6 +120,18 @@
     </div> <!-- right side column div -->
   </div> <!--Row Div -->
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(".faq-heading").click(function () {
+      $header = $(this);
+      //getting the next element
+      $content = $header.next();
+      //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+      $content.slideToggle(500, function () {});
+    });
+    </script>
 
 </body>
   <!-- Footer -->
@@ -152,6 +140,7 @@
     <p>London +44 (0) 20 7840 0889</br>
     New York +1 (212) 255 7751</p>
   </div>
+
 <html>
 
 
