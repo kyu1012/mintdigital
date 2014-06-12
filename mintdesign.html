@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- jQuery -->
+  <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <script>
+    $(document).ready(function(){ $( "#accordion" ).accordion(); })
+  </script>
+
   <!-- Bootstrap -->
   <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
   <!-- CSS -->
@@ -8,6 +16,8 @@
   <!-- Custom Fonts -->
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
+
+
 
   <!-- Green bar -->
   <div id="topborder"></div>
@@ -28,10 +38,29 @@
 
 </head>
 <body>
+  <!-- accordion test -->
+    <div id="mainContent">
+        <h1>This is an According Example</h1>
+    </div>
+    <div id="accordion">
+        <h3><a href="#">Heading for first sentence</a></h3>
+        <div>
+        <p>This is the first sentence.</p>
+        </div>
+        <h3><a href="#">Heading for second sentence</a></h3>
+        <div>
+        <p>This is the second sentence.</p>
+        </div>
+        <h3><a href="#">Heading for third sentence</a></h3>
+        <div>
+        <p>This is the third sentence.</p>
+        </div>
+    </div>
+    <!-- end accordion test -->
+
   <div class="row">
     <!-- Left Side -->
     <div class="col-md-8">
-
       <!-- Body Text -->
       <div>
           <ul id="intro"> We don't believe we can predict which new business will work and which will fail.</ul>
@@ -44,10 +73,10 @@
 
       <!-- FAQS Toggle Boxes -->
       <div id="faqs">
-
         <div class="faq-panel">
           <div class="faq-heading">
-            <h3 class="title-title">What does Mint Studio do?</h3>
+            <h3 class="title-title">What does Mint Studio Do?</h3>
+            <div class="btn btn-default btn-circle"></div>
           </div>
           <div class="faq-body">
             We partner with companies to solve problems and help build a better future. We want to build meaningful work that lasts.
@@ -55,7 +84,8 @@
         </div>
         <div class="faq-panel">
           <div class="faq-heading">
-            <h3 class="title-title">What does Mint Ventures do?</h3>
+            <h3 class="title-title">What does Mint Ventures Do?</h3>
+            <div class="btn btn-default btn-circle"></div>
           </div>
           <div class="faq-body">
             We invent, test, build and take our own products to market. We're commited to creating self-sustaining businesses.
@@ -64,14 +94,7 @@
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">What does Mint Community do?</h3>
-          </div>
-          <div class="faq-body">
-            When passionate people get together, brilliant things can happen. Our events and initiatives are aimed at helping make those connections, and providing a space for inquisitive people to share and make things together.
-          </div>
-        </div>
-        <div class="faq-panel">
-          <div class="faq-heading">
-            <h3 class="title-title">What does Mint Community do?</h3>
+            <div class="btn btn-default btn-circle"></div>
           </div>
           <div class="faq-body">
             When passionate people get together, brilliant things can happen. Our events and initiatives are aimed at helping make those connections, and providing a space for inquisitive people to share and make things together.
@@ -80,6 +103,7 @@
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">Who can I contact in the US?</h3>
+            <div class="btn btn-default btn-circle"></div>
           </div>
           <div class="faq-body">
             Speak to Christopher.
@@ -88,12 +112,12 @@
         <div class="faq-panel">
           <div class="faq-heading">
             <h3 class="title-title">Who can I contact in the UK?</h3>
+            <div class="btn btn-default btn-circle"></div>
           </div>
           <div class="faq-body">
             Say hello to Noam.
           </div>
         </div>
-        {{JSON Object here}}
       </div>
       <br>
       <br>
@@ -101,22 +125,24 @@
       <!-- Ending sentence -->
       <div> <p class="bodytext"> Every new beginning comes from some other beginning's end. </p>
       </div>
-    </div>
+    </div> <!-- left side column div -->
 
-  <!-- Right Side -->
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-header">
-        <h3 class="panel-title">Mint Products</h3>
+
+    <!-- Right Side / Mint Products -->
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-header">
+          <h3 class="panel-title">Mint Products</h3>
+        </div>
+        <div class="panel-body">
+          <ul><b><u><a>Foldable.me</a></u></b><br>A fold-it-yourself buddy creator</ul><br>
+          <ul><b><u><a>Projecteo.com</a></u></b><br>A tiny instagram projector</ul><br>
+          <ul><b><u><a>Boomf.com</a></u></b><br>Turn your memories into magical morsels</ul><br>
+          <ul><b><u><a>Deskbeers.com</a></u></b><br>Local craft beer, delivered to your office</ul>
+        </div>
       </div>
-      <div class="panel-body">
-        <ul><b><u><a>Foldable.me</a></u></b><br>A fold-it-yourself buddy creator</ul><br>
-        <ul><b><u><a>Projecteo.com</a></u></b><br>A tiny instagram projector</ul><br>
-        <ul><b><u><a>Boomf.com</a></u></b><br>Turn your memories into magical morsels</ul><br>
-        <ul><b><u><a>Deskbeers.com</a></u></b><br>Local craft beer, delivered to your office</ul>
-      </div>
-    </div>
-  </div>
+    </div> <!-- right side column div -->
+  </div> <!--Row Div -->
 
 
 </body>
@@ -126,9 +152,6 @@
     <p>London +44 (0) 20 7840 0889</br>
     New York +1 (212) 255 7751</p>
   </div>
-
-  <!-- jQuery -->
-  <script type="faq.json" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
 <html>
 
 
