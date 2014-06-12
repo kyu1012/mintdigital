@@ -9,8 +9,10 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans">
 
+  <!-- Green bar -->
   <div id="topborder"></div>
 
+  <!-- NavBar -->
   <div class="mynavbar" role="navigation">
     <div class="row">
       <div class="col-md-4">
@@ -27,10 +29,12 @@
 </head>
 <body>
   <div class="row">
-    <!-- Right Side -->
+    <!-- Left Side -->
     <div class="col-md-8">
+
+      <!-- Body Text -->
       <div>
-          <ul id="intro"> <b>We don't believe we can predict which new business will work and which will fail.</b></ul>
+          <ul id="intro"> We don't believe we can predict which new business will work and which will fail.</ul>
           <br>
           <ul class="bodytext">Instead of predicting, we strive to maximise the rate of experiments getting real world feedback. We minimise meetings, strategic discussion, and gatekeepers.</ul>
           <br>
@@ -38,31 +42,68 @@
           <br>
       </div>
 
+      <!-- FAQS Toggle Boxes -->
       <div id="faqs">
+
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">What does Mint Studio do?</h3>
+          </div>
+          <div class="faq-body">
+            We partner with companies to solve problems and help build a better future. We want to build meaningful work that lasts.
+          </div>
+        </div>
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">What does Mint Ventures do?</h3>
+          </div>
+          <div class="faq-body">
+            We invent, test, build and take our own products to market. We're commited to creating self-sustaining businesses.
+          </div>
+        </div>
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">What does Mint Community do?</h3>
+          </div>
+          <div class="faq-body">
+            When passionate people get together, brilliant things can happen. Our events and initiatives are aimed at helping make those connections, and providing a space for inquisitive people to share and make things together.
+          </div>
+        </div>
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">What does Mint Community do?</h3>
+          </div>
+          <div class="faq-body">
+            When passionate people get together, brilliant things can happen. Our events and initiatives are aimed at helping make those connections, and providing a space for inquisitive people to share and make things together.
+          </div>
+        </div>
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">Who can I contact in the US?</h3>
+          </div>
+          <div class="faq-body">
+            Speak to Christopher.
+          </div>
+        </div>
+        <div class="faq-panel">
+          <div class="faq-heading">
+            <h3 class="title-title">Who can I contact in the UK?</h3>
+          </div>
+          <div class="faq-body">
+            Say hello to Noam.
+          </div>
+        </div>
         {{JSON Object here}}
-        <!-- jQuery -->
-        <script type="faq.json" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-        <script>
-          $(function(){
-
-            var faqs = [];
-
-            $.getJSON('faqs.json', function(data){
-              $.each(data.questions, function(){
-
-              })
-            })
-          });
-        </script>
       </div>
       <br>
       <br>
 
+      <!-- Ending sentence -->
       <div> <p class="bodytext"> Every new beginning comes from some other beginning's end. </p>
       </div>
     </div>
 
-    <!-- Right Side -->
+  <!-- Right Side -->
   <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-header">
@@ -79,11 +120,15 @@
 
 
 </body>
+  <!-- Footer -->
   <div id="footer">
     <ul id="email"><a> hello@mintdigital.com </a></ul>
     <p>London +44 (0) 20 7840 0889</br>
     New York +1 (212) 255 7751</p>
   </div>
+
+  <!-- jQuery -->
+  <script type="faq.json" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"> </script>
 <html>
 
 
