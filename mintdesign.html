@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-4">
       </div>
-      <div class="col-md-4" id="barlinks">Our Process &bull; Work &bull; About &bull; Contact
+      <div class="col-md-4" id="barlinks"><a>Our Process</a> &bull; Work &bull; About &bull; Contact
       </div>
     </div>
     <hr>
@@ -40,21 +40,42 @@
 
       <div id="faqs">
         {{JSON Object here}}
+        <!-- jQuery -->
+        <script type="faq.json" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+        <script>
+          $(function(){
+
+            var faqs = [];
+
+            $.getJSON('faqs.json', function(data){
+              $.each(data.questions, function(){
+
+              })
+            })
+          });
+        </script>
       </div>
       <br>
       <br>
 
-      <div> <p class="bodytext"> Every new beginning comes from some other beginning's end </p>
+      <div> <p class="bodytext"> Every new beginning comes from some other beginning's end. </p>
       </div>
     </div>
 
     <!-- Right Side -->
   <div class="col-md-4">
-    <div id="products">
-      <ul> Mint Products</ul>
+    <div class="panel panel-default">
+      <div class="panel-header">
+        <h3 class="panel-title">Mint Products</h3>
+      </div>
+      <div class="panel-body">
+        <ul><b><u><a>Foldable.me</a></u></b><br>A fold-it-yourself buddy creator</ul><br>
+        <ul><b><u><a>Projecteo.com</a></u></b><br>A tiny instagram projector</ul><br>
+        <ul><b><u><a>Boomf.com</a></u></b><br>Turn your memories into magical morsels</ul><br>
+        <ul><b><u><a>Deskbeers.com</a></u></b><br>Local craft beer, delivered to your office</ul>
+      </div>
     </div>
   </div>
-</div>
 
 
 </body>

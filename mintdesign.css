@@ -4,20 +4,30 @@
   font-family: "Open Sans";
 }
 
+hr {
+  margin-right: 5%;
+  margin-left: 3%;
+}
+
 div {
   padding-right: 5%;
-  padding-left: 5%;
+  padding-left: 3%;
+}
+
+a {
+  color: #00CC33;
 }
 
 #topborder {
   height: 20px;
-  background-color: #00FF00;
+  background-color: #00CC33;
   margin: 0px;
   padding: 0px;
 }
 
 #footer {
   padding-top: 2%;
+  padding-left: 5%;
   position:fixed;
   left:0px;
   bottom:0px;
@@ -28,17 +38,19 @@ div {
 
 #email {
   text-decoration: underline;
-  color: #00FF00;
+  color: #00CC33;
 }
 
 #mintlogo {
   height: auto;
-  width: 50%
+  width: 50%;
 }
 
 .mynavbar {
   margin-top: 3%;
   margin-bottom: 3%;
+  padding-left: 2%;
+  padding-right: 0;
 }
 
 #intro {
@@ -54,4 +66,23 @@ div {
   font-size: 16px;
   text-align: right;
   padding-top: 8px;
+}
+
+.panel-default {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #00CC33;
+  border-radius: 15px;
+}
+
+.panel-header {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #00CC33;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
